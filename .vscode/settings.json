@@ -51,6 +51,11 @@
     "C_Cpp.clang_format_path": "C:\\Program Files\\LLVM\\bin\\clang-format.exe",
     // "C_Cpp.clang_format_style": "WebKit",
     "C_Cpp.clang_format_fallbackStyle": "none",
+    "cSpell.words": [
+        "KMUTT",
+        "Nuratch",
+        "Santi"
+    ],
     // "C_Cpp.clang_format_style": "{ BasedOnStyle: LLVM, IndentWidth: 4, ColumnLimit: 0, SpacesInCStyleCastParentheses: true, SpacesInConditionalStatement: true, SpacesInParentheses: true, AlignAfterOpenBracket: Align, AlignConsecutiveAssignments: true,AlignConsecutiveMacros: true, AlignEscapedNewlines: Right, AlignOperands: true, AlignTrailingComments: true, BreakBeforeBraces: Linux, SpaceBeforeAssignmentOperators: true}"
     // "C_Cpp.clang_format_style": "{ BasedOnStyle: LLVM, IndentWidth: 8 }"
 }

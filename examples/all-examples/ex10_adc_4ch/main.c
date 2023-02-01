@@ -22,7 +22,7 @@
 int main( void ) {
 
     /*
-     * Intianlizes the system.
+     * Initializes the system.
      */
     System_Init();
 
@@ -35,7 +35,7 @@ int main( void ) {
      * The channel 1, (ADC_ID_1) can be wired to LED by setting a jumper.
      * Please check the schematic for more details.
      *
-     * In this example, onlt basic functions of the ADCs are explained.
+     * In this example, only basic functions of the ADCs are explained.
      * Other advanced functions can be checked in other examples.
      */
 

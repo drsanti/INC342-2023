@@ -46,7 +46,7 @@
 
     #if ECC_SYSTEM_USE_RTOS > 0
         /**
-         * Initialzes all modules.
+         * Initialzed all modules.
          */
         #define System_Init() {		        \
         	Mcu_Init();				        \
@@ -66,7 +66,7 @@
         }
     #else
         /**
-         * Initialzes all modules.
+         * Initialzed all modules.
          */
         #define System_Init() {		        \
         	Mcu_Init();				        \
