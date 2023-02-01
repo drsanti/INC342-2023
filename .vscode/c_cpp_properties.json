@@ -1,0 +1,16 @@
+{
+    "configurations": [
+        {
+            "name": "xc16-gcc",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:/ecc-lab/embedded/compilers/xc16/**"
+            ],
+            "compilerPath": "C:/ecc-lab/embedded/compilers/xc16/bin/xc16-gcc.exe",
+            "cStandard": "c11",
+            "intelliSenseMode": "gcc-x86",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}
