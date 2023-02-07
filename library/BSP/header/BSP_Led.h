@@ -37,7 +37,7 @@
     /*******************************************************
      * LED TRIS DIRECTION
      *******************************************************/
-    #define LED_TRIS_OUT    0   // TRIS register outout direction value.
+    #define LED_TRIS_OUT    0   // TRIS register output direction value.
     #define LED_TRIS_INP    1   // TRIS register input direction value.
 
     /*******************************************************

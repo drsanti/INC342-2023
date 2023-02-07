@@ -73,7 +73,7 @@
      * SWITCH EVENT STRUCTURE
      ******************************************************/
     typedef struct {
-        int         type;                       // Switch evnt type.
+        int         type;                       // Switch event type.
         int         id;                         // Id of the switch.
         uint16_t    state;                      // State of the switch.
         char        *sname;                     // State name of the switch.
@@ -83,7 +83,7 @@
     /******************************************************
      * Psw_SetKeyDownCallback
      * Sets/Adds KeyDown callback to the switch specified by the id.
-     * Retuens false if the operation failed.
+     * Returns false if the operation failed.
      * Parameter:
      * - id: Id of the target switch (PSW_ID_0, PSW_ID_1, PSW_ID_2, PSW_ID_3).
      * - callback: Callback function to execute when the KeyDown state is detected.
@@ -94,7 +94,7 @@
     /******************************************************
      * Psw_SetKeyHoldCallback
      * Sets/Adds KeyHold callback to the switch specified by the id.
-     * Retuens false if the operation failed.
+     * Returns false if the operation failed.
      * Parameter:
      * - id: Id of the target switch (PSW_ID_0, PSW_ID_1, PSW_ID_2, PSW_ID_3).
      * - callback: Callback function to execute when the KeyHold state is detected.
@@ -105,7 +105,7 @@
     /******************************************************
      * Psw_SetKeyLockCallback
      * Sets/Adds KeyLock callback to the switch specified by the id.
-     * Retuens false if the operation failed.
+     * Returns false if the operation failed.
      * Parameter:
      * - id: Id of the target switch (PSW_ID_0, PSW_ID_1, PSW_ID_2, PSW_ID_3).
      * - callback: Callback function to execute when the KeyLock state is detected.
@@ -116,7 +116,7 @@
     /******************************************************
      * Psw_SetKeyUpCallback
      * Sets/Adds KeyUp callback to the switch specified by the id.
-     * Retuens false if the operation failed.
+     * Returns false if the operation failed.
      * Parameter:
      * - id: Id of the target switch (PSW_ID_0, PSW_ID_1, PSW_ID_2, PSW_ID_3).
      * - callback: Callback function to execute when the KeyUp state is detected.
@@ -127,7 +127,7 @@
     /******************************************************
      * Psw_SetKeyChangedCallback
      * Sets/Adds KeyChanged callback to the switch specified by the id.
-     * Retuens false if the operation failed.
+     * Returns false if the operation failed.
      * Parameter:
      * - id: Id of the target switch (PSW_ID_0, PSW_ID_1, PSW_ID_2, PSW_ID_3).
      * - callback: Callback function to execute when the KeyChanged state is detected.

@@ -26,9 +26,9 @@
         char    *buf;   /* Buffer, an array of bytes        */
         uint16_t put;   /* Put index                        */
         uint16_t get;   /* Get index                        */
-        uint16_t cnt;   /* Number of bytes in the quque     */
+        uint16_t cnt;   /* Number of bytes in the queue     */
         uint16_t len;   /* Number of bytes of queue size    */
-        uint16_t err;   /* Error code of the q operaions    */
+        uint16_t err;   /* Error code of the q operations   */
     }Queue;
 
     /********************************************************

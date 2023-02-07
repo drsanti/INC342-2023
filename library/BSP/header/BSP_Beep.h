@@ -33,21 +33,21 @@
     #define BEEP_OFF    1       // Beep OFF.
 
     /*******************************************************
-     * BEEP OBJECT STRUCTURER
+     * BEEP OBJECT STRUCTURE
      *******************************************************/
     typedef struct {
-        uint16_t    interval;   // Beep inrerval (in mS).
+        uint16_t    interval;   // Beep interval (in mS).
         uint16_t    ticks;      // Tick counter.
         uint16_t    counter;    // Number of beep.
         uint16_t    status;     // Beep status.
         float       frequency;  // Beep frequency (Hz).
-        float       power;      // Beep ower (0.0 - 1.0).
+        float       power;      // Beep power (0.0 - 1.0).
         uint16_t    OCxRS;      // Used to save OCxRS value.
         callback_t  callback;   // Callback function.
     }beep_t;
 
     /*******************************************************
-     * BEEP OBJECT STRUCTURER
+     * BEEP OBJECT STRUCTURE
      *******************************************************/
     typedef struct {
         uint16_t interval;      // Beep interval (in mS).
@@ -66,7 +66,7 @@
     /************************************************************
     * Beep_SetFrequency
     * Sets the frequency of the beep sound.
-    * Paremeter:
+    * Parameter:
     * - frequency: Frequency of the beep sound (1Hz - 160kHz).
     *************************************************************/
     void Beep_SetFrequency(float freq);
@@ -75,7 +75,7 @@
     * Beep_SetCallback
     * Set callback function of the beep sound. The callback
     * function will be called at the end of the beep sound period.
-    * Paremeter:
+    * Parameter:
     * - callback: Callback function of the beep.
     *************************************************************/
     void Beep_SetCallback(callback_t callback);
@@ -83,7 +83,7 @@
     /************************************************************
     * Beep_SetPower
     * Set the power of the beep sound.
-    * Paremeter:
+    * Parameter:
     * - power: Power of the beep sound (0.0 - 1.0).
     *************************************************************/
     void Beep_SetPower(float freq);
@@ -92,7 +92,7 @@
     * Beep
     * Starts the beep sound with the previous settings of the
     * frequency and power.
-    * Paremeter:
+    * Parameter:
     * - interval: Period (length) of the beep sound.
     *************************************************************/
     void Beep(uint16_t interval);
@@ -100,7 +100,7 @@
     /************************************************************
     * Beep_Play
     * Play the beep sound with the given frequency and interval.
-    * Paremeters:
+    * Parameters:
     * - interval: Period (length) of the beep sound (mS).
     * - frequency: frequency of the beep sound (Hz).
     *************************************************************/
@@ -110,7 +110,7 @@
     /************************************************************
     * Beep_Generate
     * Play the beep sound with the given frequency and interval.
-    * Paremeters:
+    * Parameters:
     * - interval: Period (length) of the beep sound (mS).
     * - frequency: frequency of the beep sound (Hz).
     * - power: Power of the beep sound (0.0 to 1.0 for 0% to 100%).

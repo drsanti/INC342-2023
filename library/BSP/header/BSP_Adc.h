@@ -28,9 +28,9 @@
     /*******************************************************
      * ADC VOLTAGE RANGE
      *******************************************************/
-    #define ADC_VOLTAGE_MAX     3.3     // Maximum voldate
+    #define ADC_VOLTAGE_MAX     3.3     // Maximum voltage
     #define ADC_VOLTAGE_MIN     0.0     // Minumum voltage
-    #define ADC_VOLTAGE_REF     0.0     // Refferent voltage
+    #define ADC_VOLTAGE_REF     0.0     // Reference voltage
 
     /*******************************************************
      * ADC OBJECT STRUCTURE
@@ -133,7 +133,7 @@
 
     /************************************************************
      * ADC_TickedExecutor (System called function)
-     * Performs the changed allculation and callback functions.
+     * Performs the changed all calculation and callback functions.
      * This function must be called from the BSP_Main every ticked interval.
      *********************************************************/
     inline void ADC_TickedExecutor(void);

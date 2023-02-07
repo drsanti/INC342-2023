@@ -151,22 +151,22 @@
      * Uart1_Init
      * Initializes Uart1.
      * Parameter:
-     * - baurate: Baudrate of the Uart1.
+     * - baudrate: Baudrate of the Uart1.
      * - rxBuffLength: RX buffer size in bytes.
      * - txBuffLength: TX buffer size in bytes.
      *******************************************************/
-    void Uart1_Init(uint32_t baurate, uint16_t rxBuffLength, uint16_t txBuffLength);
+    void Uart1_Init(uint32_t baudrate, uint16_t rxBuffLength, uint16_t txBuffLength);
 
 
     /*******************************************************
      * Uart2_Init
      * Initializes Uart2.
      * Parameter:
-     * - baurate: Baudrate of the Uart2.
+     * - baudrate: Baudrate of the Uart2.
      * - rxBuffLength: RX buffer size in bytes.
      * - txBuffLength: TX buffer size in bytes.
      *******************************************************/
-    void Uart2_Init(uint32_t baurate, uint16_t rxBuffLength, uint16_t txBuffLength);
+    void Uart2_Init(uint32_t baudrate, uint16_t rxBuffLength, uint16_t txBuffLength);
 
 
     /*******************************************************
@@ -174,11 +174,11 @@
      * Initializes the Uart specified by the id.
      * Parameter:
      * - id: Uart id (UART_ID_1 or UART_ID_2).
-     * - baurate: Baudrate of the Uart1.
+     * - baudrate: Baudrate of the Uart1.
      * - rxBuffLength: RX buffer size in bytes.
      * - txBuffLength: TX buffer size in bytes.
      *******************************************************/
-    void Uart_Init(int id, uint32_t baurate, uint16_t rxBuffLength, uint16_t txBuffLength);
+    void Uart_Init(int id, uint32_t baudrate, uint16_t rxBuffLength, uint16_t txBuffLength);
 
     /*******************************************************
      * Uart1_Put
@@ -350,13 +350,13 @@
 
     /*******************************************************
      * Uart1_GetTxBufferSpace
-     * Returns the free space (in buyes) of the Uart1 tx buffer.
+     * Returns the free space (in byte) of the Uart1 tx buffer.
      *******************************************************/
     int16_t Uart1_GetTxBufferSpace( void );
 
     /*******************************************************
      * Uart2_GetTxBufferSpace
-     * Returns the free space (in buyes) of the Uart2 tx buffer.
+     * Returns the free space (in byte) of the Uart2 tx buffer.
      *******************************************************/
     int16_t Uart2_GetTxBufferSpace( void );
 

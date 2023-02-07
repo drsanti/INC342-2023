@@ -87,7 +87,7 @@
 
     /************************************************************
     * Led_Pwm
-    * Performs LED blinkig style using PWM signal.
+    * Performs LED blinking style using PWM signal.
     * Parameters:
     * - id: Id of the target LED (LED_ID_0, ..., LED_ID_3).
     * - shift: Shift-time interval (in milliseconds).
@@ -100,7 +100,7 @@
     /************************************************************
     * Led_SetChangedCallback
     * Sets callback function to the target LED.
-    * The callback functon will be called when the LED operation is completed.
+    * The callback function will be called when the LED operation is completed.
     * Parameters:
     * - id: Id of the target LED (LED_ID_0, ..., LED_ID_3).
     * - callback: Callback function of the target LED.
@@ -120,7 +120,7 @@
 
     /************************************************************
     * LED_BlinkTickedExecutor
-    * Performs led flshing/flashing execution.
+    * Performs led flashing/flashing execution.
     * This function must be called from the BSP_Main every
     * ticked interval.
     *************************************************************/

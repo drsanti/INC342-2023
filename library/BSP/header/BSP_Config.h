@@ -22,10 +22,10 @@
     #define CONFIG_FOSC     FOSC        // CPU clock frequency, 32 MHz.
 
     /********************************************************
-     * Periphrals clock frequency. 16MHz.
+     * Peripherals clock frequency. 16MHz.
      ********************************************************/
-    #define FCY             (FOSC/2)    // Periphrals clock frequency, 16 MHz.
-    #define CONFIG_FCY      FCY         // Periphrals clock frequency, 16 MHz.
+    #define FCY             (FOSC/2)    // Peripherals clock frequency, 16 MHz.
+    #define CONFIG_FCY      FCY         // Peripherals clock frequency, 16 MHz.
 
     /********************************************************
      * Use libpic30. The FCY must be declared first.

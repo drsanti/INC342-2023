@@ -36,7 +36,7 @@
     /**
      * Writes a 1-bit of data (LOGIC_LOW or LOGIC_HIGH) to a digital output.
      * Parameter:
-     * - id: Id of the target ditilal output (DOUT_ID0,...,DOUT_ID3).
+     * - id: Id of the target digital output (DOUT_ID0,...,DOUT_ID3).
      * - data: Bit data to be written.
      */
     #define Dout_Wrt(id, data)  Led_Wrt(id, data)
@@ -79,28 +79,28 @@
     /**
      * Sets a digital output specified by the id (change to logic LOGIC_HIGH).
      * Parameter:
-     * - id: Id of the target ditilal output (DOUT_ID0,...,DOUT_ID3).
+     * - id: Id of the target digital output (DOUT_ID0,...,DOUT_ID3).
      */
     #define Dout_Set(id)    Led_Clr(id)
 
     /**
      * Resets a digital output specified by the id (change to logic LOGIC_LOW).
      * Parameter:
-     * - id: Id of the target ditilal output (DOUT_ID0,...,DOUT_ID3).
+     * - id: Id of the target digital output (DOUT_ID0,...,DOUT_ID3).
      */
     #define Dout_Clr(id)    Led_Set(id)
 
     /**
      * Toggles a digital output specified by the id to the different logic.
      * Parameter:
-     * - id: Id of the target ditilal output (DOUT_ID0,...,DOUT_ID3).
+     * - id: Id of the target digital output (DOUT_ID0,...,DOUT_ID3).
      */
     #define Dout_Inv(id)    Led_Inv(id)
 
     /**
      * Returns status (LOGIC_LOW or LOGIC_HIGH) of the digital output specified by the id.
      * Parameter:
-     * - id: Id of the target ditilal output (DOUT_ID0,...,DOUT_ID3).
+     * - id: Id of the target digital output (DOUT_ID0,...,DOUT_ID3).
      */
     #define Dout_Get(id)    Led_Get(id)
 
@@ -195,7 +195,7 @@
     /**
      * Returns status (LOGIC_LOW or LOGIC_HIGH) of the digital input specified by the id.
      * Parameter:
-     * - id: Id of the target ditilal output (DINP_ID0,...,DINP_ID3).
+     * - id: Id of the target digital output (DINP_ID0,...,DINP_ID3).
      */
     #define Dinp_Get(id)    Psw_Get(id)
 
