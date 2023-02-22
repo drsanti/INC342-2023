@@ -22,7 +22,7 @@
 int main(void) {
 
     /*
-     * Intianlizes the system.
+     * Initializes the system.
      */
     System_Init();
 
@@ -96,7 +96,7 @@ int main(void) {
     /**
      * Ex3.
      * Set the operation of the LED to PWM-based blinking again.
-     * It is now blinking agran.
+     * It is now blinking again.
      */
     Led_SetMode( LED_ID_0, LED_MODE_PWM );
 
@@ -124,7 +124,7 @@ int main(void) {
      * While the LED is working in PWM-based mode,
      * The Led_Flash() and/or Led_Blink can be called.
      * After the flashing and/or blinking operation is completed,
-     * the operation mode of the LED will be chabged back to the normal operation.
+     * the operation mode of the LED will be changed back to the normal operation.
      */
     Led_Flash( LED_ID_0, 200 );
     Led_Blink( LED_ID_1, 200, 500 );

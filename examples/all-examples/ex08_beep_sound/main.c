@@ -19,7 +19,7 @@
  ************************************************************/
 int main(void) {
     /*
-     * Intianlizes the system.
+     * Initializes the system.
      */
     System_Init();
 
@@ -33,14 +33,14 @@ int main(void) {
 
     /**
      * Ex1.
-     * Generate beep sound wiith previous settings.
+     * Generate beep sound with previous settings.
      */
     Beep(100);         // Generate beep sound for 100 mS.
     Delay_mS(1000);    // Delay for 1000 mS.
 
     /**
      * Ex2.
-     * Set the beep frquency.
+     * Set the beep frequency.
      */
     Beep_SetFrequency(4000.0f);    // Set beep frequency to 4 kHz
     Beep(100);                     // Generate beep sound for 100 mS.

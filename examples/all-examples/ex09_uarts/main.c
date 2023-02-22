@@ -19,7 +19,7 @@
  ************************************************************/
 int main( void ) {
     /*
-     * Intianlizes the system.
+     * Initializes the system.
      */
     System_Init();
 
@@ -50,20 +50,20 @@ int main( void ) {
 
     /**
      * Ex3.
-     * Synchronous Write a string (array of charecters) to the Uart.
+     * Synchronous Write a string (array of characters) to the Uart.
      */
     Uart1_Write( "\r\nhello" );  // Write a message "hello" to Uart1.
     Uart2_Write( "hello\r\n" );  // Write a message "hello" to Uart2.
 
     /**
      * Ex4.
-     * Synchronous Print formated string to the Uart.
+     * Synchronous Print formatted string to the Uart.
      */
     int x    = 20;
     double y = x / 1.23;
 
-    Uart1_Printf( "x: %2d, y: %.3f\r\n", x, y );  // Print a formated string to Uart1.
-    Uart2_Printf( "x: %2d, y: %.3f\r\n", x, y );  // Print a formated string to Uart2.
+    Uart1_Printf( "x: %2d, y: %.3f\r\n", x, y );  // Print a formatted string to Uart1.
+    Uart2_Printf( "x: %2d, y: %.3f\r\n", x, y );  // Print a formatted string to Uart2.
 
     /**
      * Ex5.
@@ -74,17 +74,17 @@ int main( void ) {
 
     /**
      * Ex6.
-     * Asynchronous Write a string (array of charecters) to the Uart.
+     * Asynchronous Write a string (array of characters) to the Uart.
      */
     Uart1_WriteAsync( "\r\nHELLO" );  // Write a message "HELLO" to Uart1.
     Uart2_WriteAsync( "HELLO\r\n" );  // Write a message "hello" to Uart2.
 
     /**
      * Ex7.
-     * Asynchronous Print formated string to the Uart.
+     * Asynchronous Print formatted string to the Uart.
      */
-    Uart1_PrintfAsync( "X: %2d, Y: %.3f\r\n", x, y );  // Print a formated string to Uart1.
-    Uart2_PrintfAsync( "X: %2d, Y: %.3f\r\n", x, y );  // Print a formated string to Uart2.
+    Uart1_PrintfAsync( "X: %2d, Y: %.3f\r\n", x, y );  // Print a formatted string to Uart1.
+    Uart2_PrintfAsync( "X: %2d, Y: %.3f\r\n", x, y );  // Print a formatted string to Uart2.
 
     /**
      * Ex8.
