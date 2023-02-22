@@ -1,5 +1,5 @@
 /************************************************************
- * Example 27. Address of variable (mamory)                 *
+ * Example 27. Address of variable (memory)                 *
  ************************************************************
  * File:    main.c                                          *
  * Author:  Asst.Prof.Dr.Santi Nuratch                      *
@@ -26,7 +26,7 @@ int16_t global_var2 = 2;
 int main( void ) {
 
     /*
-     * Intianlizes the system.
+     * Initializes the system.
      */
     System_Init();
 
@@ -37,7 +37,7 @@ int main( void ) {
 
 
     /**
-     * Address of global variables are located at data spac.
+     * Address of global variables are located at data space.
      */
     Uart1_Printf( "\nGlobal Variables:\n" );
     Uart1_Printf( "addr: 0x%.4X 0x%.4X\n", &global_var1, &global_var2 );

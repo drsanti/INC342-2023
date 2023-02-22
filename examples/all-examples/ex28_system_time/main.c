@@ -12,7 +12,7 @@
 
 /************************************************************
  * Application Description
- * Demonstread how to use the system time functions
+ * Demonstrate how to use the system time functions
  *   1) Sys_GetTimeMilli()
  *   2) Sys_GetTimeMicro()
  *

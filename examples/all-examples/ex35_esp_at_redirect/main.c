@@ -125,7 +125,7 @@ int main( void ) {
     Esp_Init( true );
 
     /**
-     * Join the AP or Hotspot (connect to WiFi network)
+     * Join the AP or Hotpot (connect to WiFi network)
      * With the available SSID and PASS of the network.
      */
     Esp_JoinAccessPoint( SSID, PASS );

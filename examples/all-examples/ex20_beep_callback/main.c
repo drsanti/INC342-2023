@@ -49,7 +49,7 @@ void Beep_Callback( void *event ) {
 int main( void ) {
 
     /*
-     * Intianlizes the system.
+     * Initializes the system.
      */
     System_Init();
 

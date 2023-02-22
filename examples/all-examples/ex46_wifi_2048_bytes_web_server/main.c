@@ -1,5 +1,5 @@
 /************************************************************
- * Example 46. Webserver for <= 2048 bytes of webpage       *
+ * Example 46. WebServer for <= 2048 bytes of webpage       *
  ************************************************************
  * File:    main.c                                          *
  * Author:  Asst.Prof.Dr.Santi Nuratch                      *
@@ -44,7 +44,7 @@ const char *htmlContent = "<html><head><title>ECC-Lab</title><style>body{text-al
 
 
 /**
- * Capture the AT returned reqults.
+ * Capture the AT returned results.
  * Should be false
  */
 #define AT_CAPTURE  true
@@ -57,7 +57,7 @@ const char *htmlContent = "<html><head><title>ECC-Lab</title><style>body{text-al
 #define SERVER_STATE_START      0x01    // Start the server.
 #define SERVER_STATE_WAITING    0x02    // Waiting for one or more requests.
 #define SERVER_STATE_REQUEST    0x03    // One or more clients requested.
-#define SERVER_STATE_RESPONSD   0x04    // Responding to a terget client.
+#define SERVER_STATE_RESPONSD   0x04    // Responding to a target client.
 #define SERVER_STATE_CLOSE      0x05    // Close the current connection.
 
 
@@ -135,7 +135,7 @@ typedef struct {
     uint16_t         ChunkSize;     // Desired chunk size.
     uint16_t         NumFrames;     // Number of frames.
     uint16_t         RestBytes;     // Number of bytes of the last frame.
-    uint16_t         SendBytes;     // Nuber of bytes to be sent.
+    uint16_t         SendBytes;     // Number of bytes to be sent.
     const char *     PtrFrame;      // Pointer to the data chunk.
 }chunk_info_t;
 
@@ -148,7 +148,7 @@ chunk_info_t chunk;
 /**
  * Initializes the chunk object.
  * This function is called when the client requested.
- * See in the SERVER_STATE_WAITING state of the state machime.
+ * See in the SERVER_STATE_WAITING state of the state machine.
  */
 void Chunk_Init( const char * data, uint16_t ChunkSize ) {
     chunk.DataLength = strlen(data);
@@ -209,7 +209,7 @@ void ClientTimer_Callback( event_t *event ) {
         break;
 
         /**
-         * Start the server and make it lesten to the port 80.
+         * Start the server and make it listens to the port 80.
          */
         case SERVER_STATE_START:
             Esp_AtSendCommandCapture( "AT+CIPSERVER=1,80", AT_DEFAULT_TIMEOUT, AT_CAPTURE );
@@ -387,7 +387,7 @@ void Stop_Server( void ) {
 }
 
 /**
- * Ends the waiting state of the timer. This cuntion is called from the Cmd_Callback().
+ * Ends the waiting state of the timer. This function is called from the Cmd_Callback().
  */
 void Stop_Waiting( void ) {
     //Timer_EndWaiting( server.timer );
@@ -398,7 +398,7 @@ void Stop_Waiting( void ) {
 
 /**
  * Callback function of the WiFi data received.
- * Ptins only the HTTP response lines.
+ * Prints only the HTTP response lines.
  */
 void WifiDataReceived_Callback( event_t *event ) {
 

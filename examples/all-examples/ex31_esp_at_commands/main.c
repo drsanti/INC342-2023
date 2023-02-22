@@ -71,7 +71,7 @@ int main( void ) {
     Uart1_WriteAsync( "\nPress the switches to apply the AT commands.\n" );
 
     /**
-     * Initializes the Uart2 (For ESP8266 moduel).
+     * Initializes the Uart2 (For ESP8266 module).
      */
     Uart2_Init( 115200, 256, 256 );
 

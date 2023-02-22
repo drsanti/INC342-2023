@@ -80,7 +80,7 @@
  *
  * The first line is the ESP specific. The number
  * after the "+IPD", informs the total package size i
- * ncluding all CRLFs and other hidden characters.
+ * including all CRLFs and other hidden characters.
  * Other lines are the common header element of the
  * HTTP response header.
  *
@@ -117,7 +117,7 @@ void WifiDataReceived_Callback( event_t *event ) {
 void KeyDown_Callback( event_t *event ) {
 
     /**
-     * Capture the AT returned reqults.
+     * Capture the AT returned results.
      */
     #define AT_CAPTURE true
 

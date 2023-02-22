@@ -59,7 +59,7 @@ const char * PASS = SYSTEM_DEFAULT_NETWORK_PASS;    // Password of the network.
 
 
 /**
- * Capture the AT returned reqults.
+ * Capture the AT returned results.
  * Should be false
  */
 #define AT_CAPTURE  false
@@ -276,7 +276,7 @@ void Start_Server( void ) {
 }
 
 /**
- * Ends the waiting state of the timer. This cuntion is called from the Cmd_Callback().
+ * Ends the waiting state of the timer. This function is called from the Cmd_Callback().
  */
 void Stop_Waiting( void ) {
     Timer_EndWaiting( serverTimer );
@@ -285,7 +285,7 @@ void Stop_Waiting( void ) {
 
 /**
  * Callback function of the WiFi data received.
- * Ptins only the HTTP response lines.
+ * Prints only the HTTP response lines.
  */
 void WifiDataReceived_Callback( event_t *event ) {
 

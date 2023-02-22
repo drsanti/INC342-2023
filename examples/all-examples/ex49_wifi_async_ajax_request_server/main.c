@@ -82,7 +82,7 @@ const char * jsContent = "window.onload=function(e){function n(e){return documen
 
 
 /**
- * Capture the AT returned reqults.
+ * Capture the AT returned results.
  * Should be false
  */
 #define AT_CAPTURE  true
@@ -95,7 +95,7 @@ const char * jsContent = "window.onload=function(e){function n(e){return documen
 #define SERVER_STATE_START      0x01    // Start the server.
 #define SERVER_STATE_WAITING    0x02    // Waiting for one or more requests.
 #define SERVER_STATE_REQUEST    0x03    // One or more clients requested.
-#define SERVER_STATE_RESPONSE   0x04    // Responding to a terget client.
+#define SERVER_STATE_RESPONSE   0x04    // Responding to a target client.
 #define SERVER_STATE_CLOSE      0x05    // Close the current connection.
 
 
@@ -264,7 +264,7 @@ void ClientTimer_Callback( event_t *event ) {
         break;
 
         /**
-         * Start the server and make it lesten to the port 80.
+         * Start the server and make it listen to the port 80.
          */
         case SERVER_STATE_START:
             Esp_AtSendCommandCapture( "AT+CIPSERVER=1,80", AT_DEFAULT_TIMEOUT, AT_CAPTURE );

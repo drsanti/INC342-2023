@@ -54,7 +54,7 @@ void TxRx_FullCallback( void *event ) {
 int main(void) {
 
     /*
-     * Intianlizes the system.
+     * Initializes the system.
      */
     System_Init();
 
@@ -82,7 +82,7 @@ int main(void) {
      * Set the TxCallback function to the Uart1.
      * The callback function will be called when the
      * asynchronous buffer is empty. For example, after the function
-     * Uart_WriteAsync("hello") is called and the laste character, 'o' is
+     * Uart_WriteAsync("hello") is called and the lasted character, 'o' is
      * written to the TXREG, the callback function is called.
      */
     Uart1_SetTxCallback ( Tx_Callback );

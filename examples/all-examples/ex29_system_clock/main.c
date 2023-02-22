@@ -12,12 +12,12 @@
 
 /************************************************************
  * Application Description
- * Demonstread how to use the system clock functions
+ * Demonstrate how to use the system clock functions
  *   1) Sys_GetClock()
  *   2) Sys_SetClock()
  *
  * TThis application responds to two switches, the PSW0 and PSW1.
- *  - When PSW0 is pressed, it gets and ptints the system clock.
+ *  - When PSW0 is pressed, it gets and prints the system clock.
  *  - When PSW1 is pressed, it sets the system clock to the specified time.
  ************************************************************/
 

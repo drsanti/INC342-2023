@@ -58,7 +58,7 @@ const char * PASS = SYSTEM_DEFAULT_NETWORK_PASS;    // Password of the network.
 void KeyDown_Callback( event_t *event ) {
 
     /**
-     * Capture the AT returned reqults.
+     * Capture the AT returned results.
      */
     #define AT_CAPTURE true
 

@@ -19,7 +19,7 @@
  * Setup
  *
  * 1) Change the SSID and PASS to match your AP or Hotspot
- * 2) Run the applicatio, and wait 3-10 seconds.
+ * 2) Run the application, and wait 3-10 seconds.
  * 3) Press PSW1 to check the connected SSID.
  * 4) Press PSW2 to check IP address.
  ************************************************************/

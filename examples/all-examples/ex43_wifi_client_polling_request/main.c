@@ -49,7 +49,7 @@ const char * path = "/iot/apis/?time"; // time, date, real, int
 #define POLLING_REQEUST_INTERVAL 5000
 
 /**
- * Capture the AT returned reqults.
+ * Capture the AT returned results.
  */
 #define AT_CAPTURE  false
 
@@ -118,7 +118,7 @@ void ClientTimer_Callback( event_t *event ) {
     switch( get_state()  ) {
 
         /**
-         * Waiting for the next reqeust.
+         * Waiting for the next request.
          */
         case CLIENT_STATE_WAITING:
             if( Sys_GetTimeMilli() - get_info()->prevTime > get_info()->interval ) {
@@ -200,7 +200,7 @@ void Start_Client( void ) {
 }
 
 /**
- * Ends the waiting state of the timer. This cuntion is called from the Cmd_Callback().
+ * Ends the waiting state of the timer. This function is called from the Cmd_Callback().
  */
 void Stop_Waiting( void ) {
     Timer_EndWaiting( clientTimer );
@@ -209,7 +209,7 @@ void Stop_Waiting( void ) {
 
 /**
  * Callback function of the WiFi data received.
- * Ptins only the HTTP response lines.
+ * Prints only the HTTP response lines.
  */
 void WifiDataReceived_Callback( event_t *event ) {
 

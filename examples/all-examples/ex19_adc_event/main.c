@@ -39,7 +39,7 @@ void ADCx_VoltageChangedCallback( event_t *event )  {
 int main( void ) {
 
     /*
-     * Intianlizes the system.
+     * Initializes the system.
      */
     System_Init();
 

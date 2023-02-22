@@ -92,7 +92,7 @@ int main( void ) {
     Uart1_WriteAsync( "\nPress a switch and check the result.\n" );
 
     /**
-     * Initializes the Uart2 (For ESP8266 moduel).
+     * Initializes the Uart2 (For ESP8266 nodule).
      */
     Uart2_Init( 115200, 256, 256 );
 

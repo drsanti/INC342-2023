@@ -32,7 +32,7 @@ void RxLine_Callback( void *event ) {
 int main( void ) {
 
     /*
-     * Intianlizes the system.
+     * Initializes the system.
      */
     System_Init();
 
@@ -46,7 +46,7 @@ int main( void ) {
 
     /**
      * Set the RxLineCallback (line received) function to the Uart1.
-     * This runction requires the buffer size passing to it.
+     * This function requires the buffer size passing to it.
      * It will allocates memory for storing the received line.
      * If the received line is longer than the buffer size-2,
      * the callback function is also called.
