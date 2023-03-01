@@ -55,9 +55,9 @@ int main(void)
 	/**
 	 * Write data to array.
 	*/
-	Uart1_Printf("Before: arr2[0] = %d\r\n", arr2[0]);
+	Uart1_Printf("Before: arr2[0] = %ld\r\n", arr2[0]);
 	arr2[0] = 123;
-	Uart1_Printf("After: arr2[0] = %d\r\n", arr2[0]);
+	Uart1_Printf("After: arr2[0] = %ld\r\n", arr2[0]);
 
 
 	Uart1_Printf("Before: arr5[0] = %d\r\n", arr5[0]);
@@ -84,16 +84,17 @@ int main(void)
 	int16_t i;
 	int16_t n = sizeof(arr4) / sizeof(arr4[0]);
 	for(i=0; i<n; i++) {
-		Uart1_Printf("arr4[%d] = %d\r\n", arr4[i]);	
+		Uart1_Printf("arr4[%d] = %f\r\n", i, arr4[i]);	
 	}
 
 	/**
 	 * Read 4 channels of ADC and write to array.
 	*/
-	adc_arr[4];
-	for(i=0; i<4; i++) {
-		adc_arr[i] = Adc_Get(i);	
-		Uart1_Printf("adc[%d] = %d\r\n", adc_arr[i]);	
+	int16_t j;
+	int16_t adc_arr[4];
+	for(j=0; j<4; j++) {
+		adc_arr[j] = Adc_Get(j);	
+		Uart1_Printf("adc[%d] = %d\r\n", j, adc_arr[j]);	
 	}
 
 
