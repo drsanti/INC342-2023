@@ -65,7 +65,7 @@ int main(void) {
 
     /**
      * Ex3.
-     * Read all bits of the gitial input channels.
+     * Read all bits of the digital input channels.
      * Bit4 to Bit7 are ignored (read as zeros).
      */
     uint8_t bits = Dinp_Read();

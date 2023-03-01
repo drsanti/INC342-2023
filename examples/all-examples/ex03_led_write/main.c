@@ -22,7 +22,7 @@
 int main(void) {
 
     /*
-     * Intianlizes the system.
+     * Initializes the system.
      */
     System_Init();
 
@@ -95,7 +95,7 @@ int main(void) {
      */
     Led_Write( 0x01 );                  // Write data 0x01 (0001) to LEDs (Only LED0 is turned ON).
     Led_Write( 0x03 );                  // Write data 0x03 (0011) to LEDs (LED0 & LED1 are turned ON).
-    Led_Write( 0x07 );                  // Write data 0x07 (0111) to LEDs (Only LED3 is tuened OFF).
+    Led_Write( 0x07 );                  // Write data 0x07 (0111) to LEDs (Only LED3 is tunned OFF).
     Led_Write( 0x0F );                  // Write data 0x0F (1111) to LEDs (ALL LEDs are turned ON).
 
 
