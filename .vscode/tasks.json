@@ -1,12 +1,233 @@
+/**
+ * Icons: https://code.visualstudio.com/api/references/icons-in-labels
+ */
 {
-    // See https://go.microsoft.com/fwlink/?LinkId=733558
-    // for the documentation about the tasks.json format
-    "version": "2.0.0",
-    "tasks": [
-        {
-            "label": "echo",
-            "type": "shell",
-            "command": "echo Hello"
-        }
-    ]
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "ternion-save-all",
+			"command": "${command:workbench.action.files.saveAll}",
+			"type": "shell",
+			"problemMatcher": [],
+			"icon": {
+				"id": "save-all",
+				"color": "terminal.ansiGreen"
+			}
+		},
+		{
+			"label": "ternion-compile",
+			"type": "shell",
+			"command": "ternion",
+			"args": [
+				"compile"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}/examples/inc342/main"
+			},
+			"icon": {
+				"id": "bug",
+				"color": "terminal.ansiYellow"
+			},
+			"dependsOn": [
+				"ternion-save-all"
+			],
+			"dependsOrder": "sequence",
+			"problemMatcher": []
+		},
+		{
+			"label": "ternion-restart",
+			"type": "shell",
+			"command": "ternion",
+			"args": [
+				"restart"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}/examples/inc342/main"
+			},
+			"icon": {
+				"id": "refresh",
+				"color": "terminal.ansiYellow"
+			},
+			"dependsOn": [
+				"ternion-save-all"
+			],
+			"dependsOrder": "sequence",
+			"problemMatcher": []
+		},
+		{
+			"label": "ternion-build",
+			"type": "shell",
+			"command": "ternion",
+			"args": [
+				"build"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}/examples/inc342/main"
+			},
+			"icon": {
+				"id": "gear",
+				"color": "terminal.ansiGreen"
+			},
+			"dependsOn": [
+				"ternion-save-all"
+			],
+			"dependsOrder": "sequence",
+			"problemMatcher": []
+		},
+		{
+			"label": "ternion-flash",
+			"type": "shell",
+			"command": "ternion",
+			"args": [
+				"flash"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}/examples/inc342/main"
+			},
+			"icon": {
+				"id": "run",
+				"color": "terminal.ansiGreen"
+			},
+			"dependsOn": [
+				"ternion-save-all"
+			],
+			"dependsOrder": "sequence",
+			"problemMatcher": []
+		},
+		{
+			"label": "ternion-monitor",
+			"type": "shell",
+			"command": "ternion",
+			"args": [
+				"monitor"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}/examples/inc342/main"
+			},
+			"presentation": {
+				"focus": true
+			},
+			"icon": {
+				"id": "console",
+				"color": "terminal.ansiGreen"
+			},
+			"dependsOn": [
+				"ternion-save-all"
+			],
+			"dependsOrder": "sequence",
+			"problemMatcher": []
+		},
+		{
+			"label": "ternion-build-flash",
+			"type": "shell",
+			"command": "ternion",
+			"args": [
+				"build",
+				"flash"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}/examples/inc342/main"
+			},
+			"icon": {
+				"id": "debug-alt",
+				"color": "terminal.ansiGreen"
+			},
+			"dependsOn": [
+				"ternion-save-all"
+			],
+			"dependsOrder": "sequence",
+			"problemMatcher": []
+		},
+		{
+			"label": "ternion-build-flash-monitor",
+			"type": "shell",
+			"command": "ternion",
+			"args": [
+				"build",
+				"flash",
+				"monitor"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}/examples/inc342/main"
+			},
+			"presentation": {
+				"focus": true
+			},
+			"icon": {
+				"id": "debug-console",
+				"color": "terminal.ansiGreen"
+			},
+			"dependsOn": [
+				"ternion-save-all"
+			],
+			"dependsOrder": "sequence",
+			"problemMatcher": []
+		},
+		{
+			"label": "ternion-cleanup",
+			"type": "shell",
+			"options": {
+				"cwd": "${workspaceFolder}/examples/inc342/main"
+			},
+			"command": "echo cleaning... && rm -rf output && rm -rf settings && echo done!",
+			"presentation": {
+				"reveal": "always",
+				"clear": true,
+				"close": true,
+				"showReuseMessage": true
+			},
+			"icon": {
+				"id": "trash",
+				"color": "terminal.ansiRed"
+			},
+			"dependsOn": [
+				"ternion-save-all"
+			],
+			"dependsOrder": "sequence",
+			"problemMatcher": []
+		},
+		{
+			"label": "ternion-library-build",
+			"type": "shell",
+			"command": "ternion",
+			"args": [
+				"library",
+				"-c",
+				"libbuild.cfg"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}/Core/Trn/Libbuild"
+			},
+			"icon": {
+				"id": "library",
+				"color": "terminal.ansiRed"
+			},
+			"dependsOn": [
+				"ternion-save-all"
+			],
+			"dependsOrder": "sequence",
+			"problemMatcher": []
+		},
+		{
+			"label": "ternion-git-push",
+			"type": "shell",
+			"command": "git add . && git commit -m \"update\" && git push",
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"presentation": {
+				"focus": true
+			},
+			"icon": {
+				"id": "github",
+				"color": "terminal.ansiRed"
+			},
+			"dependsOn": [
+				"ternion-save-all",
+				"ternion-cleanup"
+			],
+			"dependsOrder": "sequence",
+			"problemMatcher": []
+		}
+	]
 }
