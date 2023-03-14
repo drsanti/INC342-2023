@@ -45,8 +45,6 @@ int main(void)
 	Uart1_Printf("p1 pointed address: %p\r\n", p1);			// Print value of p1
 	Uart1_Printf("p1 pointed value:   %d\r\n", *p1);		// Print memory address of p1
 
-
-
 	/**
 	 * Declare an array.
 	*/
@@ -74,27 +72,34 @@ int main(void)
 
 
 	/**
-	 * 
+	 * Declare a structure variable.
 	*/
 	struct PLC plc1;
 
 	/**
-	 * 
+	 * Declare a pointer to PLC structure.
 	*/
 	struct PLC *ptr2plc;
 
 	/**
-	 * 
+	 * Assign the pointer to the structure variable (point to the address of plc1).
 	*/
 	ptr2plc = &plc1;
 
 
 	/**
-	 * 
+	 * Write data to variables in the structure.
 	*/
-	ptr2plc->id = 3;
+	ptr2plc->id     = 3;
 	ptr2plc->num_io = 8;
-	ptr2plc->info = "Robot #1";
+	ptr2plc->info   = "Robot #1";
+
+
+	/**
+	 * Read data from variable structure.
+	*/
+	Uart1_Printf("id: %d, num_io: %d, into: %s\r\n", ptr2plc->id, ptr2plc->num_io, ptr2plc->info);
+
 
 	System_Start();
 }
