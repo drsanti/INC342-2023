@@ -3,7 +3,7 @@
 
 /**
  * Embedded C
- * Dynamic memory
+ * Dynamic Memory and Pointer
 */
 
 
