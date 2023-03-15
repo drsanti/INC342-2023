@@ -114,3 +114,61 @@ int main(void)
 
     System_Start();	/** Start the system */
 }
+
+
+
+
+#include "ecc.h"
+
+// // flag variable
+// bool is_timeout = false;
+
+// timer_t * t3s  = NULL;
+// timer_t * t2hz = NULL;
+
+
+// int16_t counter = 0;
+
+// void led_blink(void *event) {
+
+//     Led0_Inv();
+//     counter++;
+//     if( counter >= 10 ){
+//         Timer_Delete(t2hz);
+//         t2hz = NULL;
+//     }
+// }
+
+// void psw2_pressed(void *event){
+//     Led1_Inv();   
+// }
+
+// void psw3_pressed(void *event){
+//     Led2_Inv();
+// }
+
+// void timeout3sec(void *event){
+//     Led1_Clr();
+//     Led2_Clr();
+//     Uart1_Printf("\r\n123 234 456\r\n");
+//     t2hz = Timer_Create(250, led_blink);
+//     Psw_SetKeyDownCallback(PSW_ID_2, psw2_pressed);
+//     Psw_SetKeyDownCallback(PSW_ID_3, psw3_pressed);
+//     Timer_Delete(t3s);
+//     t3s = NULL;
+// }
+// int main(void){
+//     System_Init();
+//     int16_t i;
+// 	for( i = LED_ID_0; i <= LED_ID_3; i++ ){
+// 		Led_Clr( i );
+// 	}
+
+//     Led1_Set();
+//     Led2_Set();
+//     t3s = Timer_Create(3000, timeout3sec);
+// 	System_Start();
+// }
+
+
+
