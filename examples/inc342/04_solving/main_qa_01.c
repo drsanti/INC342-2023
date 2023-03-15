@@ -28,7 +28,16 @@ bool is_timeout = false;
 /** Callback function called every 500 ms */
 void blinking(void *event) 
 {
-	Led1_Inv();
+	Led0_Inv();
+
+	if(Led0_Get() == LED_ON)
+	{
+		Led1_Clr();
+	}
+	else
+	{
+		Led1_Set();
+	}
 }
 
 /** Callback function called every 3 seconds */
